@@ -11,14 +11,30 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "babel-plugin-styled-components": "^1.12.0",
+    "customizable-progress-bar": "^1.0.15",
     "gatsby": "^3.1.2",
+    "gatsby-image": "^3.2.0",
+    "gatsby-plugin-image": "^1.2.0",
+    "gatsby-plugin-sharp": "^3.2.0",
+    "gatsby-plugin-styled-components": "^4.2.0",
+    "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-animations": "^1.0.0",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "react-scroll": "^1.8.2",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.2.1"
   },
   "repository": {
